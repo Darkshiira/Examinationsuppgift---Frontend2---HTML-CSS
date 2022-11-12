@@ -1,0 +1,12 @@
+@use "variables" as v;
+
+@mixin roundedImage {
+    border-radius: 10%;
+    // border: 2px solid v.$primary-color;
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+@mixin textShadow {
+color: #222222;
+text-shadow: #c3c3c3 1px 1px 0;
+}

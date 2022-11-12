@@ -1,0 +1,124 @@
+body {
+  background-color: #183021;
+  color: #fff;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+body a {
+  text-decoration: none;
+  color: #183021;
+}
+body i {
+  font-size: xx-large;
+}
+body .container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 150px 2fr 150px;
+  grid-template-areas: "nav header" "nav main" "footer footer";
+}
+body .container nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100%;
+  padding: 0 32px;
+  background-color: #2a7e5b;
+  backdrop-filter: blur(10px);
+  color: #183021;
+}
+body .container nav .nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 12px;
+}
+body .container nav .nav-links a {
+  color: #222222;
+  text-shadow: #c3c3c3 1px 1px 0;
+  color: #183021;
+  padding: 23px 0;
+}
+body .container nav .nav-links i {
+  padding: 36px 0;
+  color: #222222;
+  text-shadow: #c3c3c3 1px 1px 0;
+}
+body .container header {
+  text-align: center;
+  grid-area: header;
+}
+body .container header h1 {
+  font-family: "Fasthand", cursive;
+  font-size: 3rem;
+}
+body .container main {
+  text-align: center;
+  grid-area: main;
+}
+body .container main img {
+  border-radius: 10%;
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+body .container main .deck {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+body .container main .deck .card {
+  border-radius: 10%;
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  width: 30%;
+  background-color: #2a7e5b;
+}
+body .container main .deck .card .card-img {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+body .container main .deck .card .card-img i {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: large;
+  font-size: 3rem;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+}
+body .container main .deck .card .card-img img {
+  width: 100%;
+}
+body .container main .deck .card .card-title {
+  font-family: "fasthand", cursive;
+}
+body .container main .deck .card .card-category {
+  color: #222222;
+  text-shadow: #c3c3c3 1px 1px 0;
+  text-align: end;
+  padding-right: 10px;
+}
+body .container main .deck .card .card-text {
+  height: 20px;
+  overflow: hidden;
+}
+body .container main .deck .card .card-text .arrowDown {
+  font-size: large;
+  color: #fff;
+}
+body .container main .deck .card .card-text .arrowUp {
+  transform: rotate(0.5turn);
+}
+body .container main .deck .card .card-text button {
+  background-color: #2a7e5b;
+  border: none;
+  color: #183021;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=styles.css.map */
