@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a7ce316168.js" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+        
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <div class="logo">
+            <img src="./media/mushroom.png" width="100px" alt="logo">
+        </div>
+        <div class="nav-links" >
+            <a href="/index.html"><i class="fa-solid fa-tree"></i></a>
+            <a href="/index.html" class="nav-items"><h3 class="nav-link-text">Hem</h3></a>
+        </div>
+        <div class="nav-links" >
+            <a href="/events.html"><i class="fa-solid fa-person-hiking"></i></a>
+            <a href="/events.html" class="nav-items"><h3 class="nav-link-text">Alla Event</h3></a>
+        </div>
+        <div class="nav-links" >
+            <a href="createevent.html"><i class="fa-solid fa-file-signature"></i></a>
+            <a href="createevent.html" class="nav-items"><h3 class="nav-link-text">Skapa Event</h3></a>
+            </div>
+        <div class="nav-links" >
+            <i class="fa-solid fa-bug"></i>
+            <a href="" class="nav-items"><h3 class="nav-link-text">Om oss</h3></a>
+        </div>
+    </nav>
+    <main>
+        <h1>Kom med oss på äventyr!</h1>
+        <div class="deck">
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1573689705959-7786e029b31e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZhaXJ5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"  alt="An image of a tree with lights on it">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <p class="card-category"><strong>Upplevelse</strong></p>
+                <h2 class="card-title"><strong>Ljusfest</strong></h2>
+                <p><em>2022-12-24</em></p>
+                <p class="card-text" id="card-text-1">Nu bryter vi mörkret! <button type="button" id="arrowDown-1" class="arrowDown"><i class="arrowDown fa-solid fa-arrow-down"></i></button><br>
+                    Välkomna ut på vandring i vår vackra trädgård! Älvorna har dekorerat med vackra ljus över hela trädgården med magiskt stoft. Här kommer vi promenera, äta och njuta av det vackra ljusskenet som  bekämpar ondskan!</p>
+                    <p><a href="/eventdetail.html">Mer info...</a></p>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1607796059431-132cf42fdaa9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="An image of two grey santas in a garden">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <p class="card-category"><strong>Besök</strong></p>
+                <h2 class="card-title"><strong>Tomte-besök</strong></h2>
+                <p><em>2022-10-31</em></p>
+                <p class="card-text" id="card-text-2">Vi hälsar på tomtarna! <button type="button" id="arrowDown-2" class="arrowDown"><i class="arrowDown fa-solid fa-arrow-down"></i></button><br>
+                    Ute i trädgården bor våra kära små tomtar. Vi kommer att, <em>förhoppningsvis</em> kunna hälsa på dom och få se hur de har det!</p>
+                    <p><a href="/eventdetail.html">Mer info...</a></p>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1577493340887-b7bfff550145?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZHJhZ29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="An image of a dragon climbing a tower">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <p class="card-category"><strong>EVENT</strong></p>
+                <h2 class="card-title"><strong>Drak-bekämpning</strong></h2>
+                <p><em>2022-11-12</em></p>
+                <p class="card-text" id="card-text-3">Bekämpa draken! <button type="button" id="arrowDown-3" class="arrowDown"><i class="arrowDown fa-solid fa-arrow-down"></i></button><br>
+                    Nu måste alla hjälpas åt att bekämpa draken som tågat in i vår värld! Ta med er era bästa vapen, klä er skyddat och var tappra!</p>
+                    <p><a href="/eventdetail.html">Mer info...</a></p>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1508018151423-1b1e201c4203?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fHRvYWRzdG9vbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"  alt="An iamge of a toadstool">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <p class="card-category"><strong>Uppdrag</strong></p>
+                <h2 class="card-title"><strong>Svampplockning</strong></h2>
+                <p><em>2022-10-25</em></p>
+                <p class="card-text" id="card-text-4">Dags att plocka svamp! <button type="button" id="arrowDown-4" class="arrowDown"><i class="arrowDown fa-solid fa-arrow-down"></i></button><br>
+                    Nu är trädgården full av svampar! Vi kommer att plocka svampar och äta dem tillsammans. Vi kommer att lära oss om vilka svampar som är giftiga och vilka som är ätliga.</p>
+                    <p><a href="/eventdetail.html">Mer info...</a></p>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1519872436884-4a50eb5a62db?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZmFpcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="An image of a leprichaun house with round doors">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <p class="card-category"><strong>Besök</strong></p>
+                <h2 class="card-title"><strong>Pysslingarnas hus!</strong></h2>
+                <p><em>2022-11-04</em></p>
+                <p class="card-text" id="card-text-5">Vi hälsar på pysslingarna! <button type="button" id="arrowDown-5" class="arrowDown"><i class="arrowDown fa-solid fa-arrow-down"></i></button><br>
+                    Vi tar en tur till pysslingarnas hus, och hoppas på att få träffa på dem. Det kan vara ganska svårt att hitta dit, så vi lämnar inga garantier för att de visar sig.</p>
+                    <p><a href="/eventdetail.html">Mer info...</a></p>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1609193297220-8a754d166bbc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGZhaXJ5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"  alt="An image of a small garden with a sign that says Enchanted gardens">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <p class="card-category"><strong>Besök</strong></p>
+                <h2 class="card-title"><strong>Älvornas hem</strong></h2>
+                <p><em>2023-03-01</em></p>
+                <p class="card-text" id="card-text-6">Vi hälsar på älvorna! <button type="button" id="arrowDown-6" class="arrowDown"><i class="arrowDown fa-solid fa-arrow-down"></i></button><br>
+                    Om du har ett gott hjärta kan älvorna visa sig för oss. Då släpper deras magiska ridå, och vi kan kliva in i deras vackra hemmiljö! Fullt av glitter och magi!</p>
+                    <p><a href="/eventdetail.html">Mer info...</a></p>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZmFudGFzeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"  alt="An image of a catacomb with a person holding a fire in the middle of it">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <p class="card-category"><strong>EVENT</strong></p>
+                <h2 class="card-title"><strong>Trollen i katakomberna!</strong></h2>
+                <p><em>2022-11-30</em></p>
+                <p class="card-text" id="card-text-7">Vi måste besegra trollen! <button type="button" id="arrowDown-7" class="arrowDown"><i class="arrowDown fa-solid fa-arrow-down"></i></button><br>
+                    Trollen har tagit över katakomberna! Ta med er era bästa vapen, klä er skyddat och var tappra! Troll är inte att leka med, de är stora och farliga, så var beredda!</p>
+                    <p><a href="/eventdetail.html">Mer info...</a></p>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1499343162160-cd1441923dd3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGZhbnRhc3l8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"  alt="An image of a tree, with lightfigures glowing around it.">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <p class="card-category"><strong>Upplevelse</strong></p>
+                <h2 class="card-title"><strong>Älvornas fest!</strong></h2>
+                <p><em>2022-12-31</em></p>
+                <p class="card-text" id="card-text-8">Vi hälsar på älvorna! <button type="button" id="arrowDown-8" class="arrowDown"><i class="arrowDown fa-solid fa-arrow-down"></i></button><br>
+                    Älvorna firar nyår! Detta på ett väldigt speciellt och unikt vis! Kom och fira med oss, så får ni uppleva en <strong>magisk</strong>kväll!</p>
+                    <p><a href="/eventdetail.html">Mer info...</a></p>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1462759353907-b2ea5ebd72e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGZhbnRhc3l8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"  alt="An image of a leprichaunhouse with round door">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <p class="card-category"><strong>Besök</strong></p>
+                <h2 class="card-title"><strong>Pysslingarnas hem</strong></h2>
+                <p><em>2023-04-24</em></p>
+                <p class="card-text" id="card-text-9">Vi hälsar på pysslingarna! <button type="button" id="arrowDown-9" class="arrowDown"><i class="arrowDown fa-solid fa-arrow-down"></i></button><br>
+                    Vi tar en tur till pysslingarnas hus, och hoppas på att få träffa på dem. Det kan vara ganska svårt att hitta dit, så vi lämnar inga garantier för att de visar sig. </p>
+                    <p><a href="/eventdetail.html">Mer info...</a></p>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1484538162795-891443f6074f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fGZhbnRhc3l8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"  alt="An image of a small seethrough bubble with frosty leafs on the side">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <p class="card-category"><strong>Uppdrag</strong></p>
+                <h2 class="card-title"><strong>Älvornas vinter</strong></h2>
+                <p><em>2022-12-13</em></p>
+                <p class="card-text" id="card-text-10">Vi julpyntar! <button type="button" id="arrowDown-10" class="arrowDown"><i class="arrowDown fa-solid fa-arrow-down"></i></button><br>
+                    Älvorna gör julpyssel på sitt eget vis. Kom och dela deras kunskap om magiska ljus och framkalla en unik jul hemma hos dig! </p>
+                    <p><a href="/eventdetail.html">Mer info...</a></p>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjB8fGZhbnRhc3l8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"  alt="An image of circles in the ground with a center of a pile of rocks.">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <p class="card-category"><strong>Upplevelse</strong></p>
+                <h2 class="card-title"><strong>Vår-ritual</strong></h2>
+                <p><em>2023-04-30</em></p>
+                <p class="card-text" id="card-text-11">Vi offrar till våren! <button type="button" id="arrowDown-11" class="arrowDown"><i class="arrowDown fa-solid fa-arrow-down"></i></button><br>
+                    Årets vår-infirande sker som vanligt vid den stora häxcirkeln. Ta med dig ditt bästa humör och dina bästa vinter-offer!</p>
+                    <p><a href="/eventdetail.html">Mer info...</a></p>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzB8fGZhbnRhc3l8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"  alt="An image of starfilled sky, that shifts in pink and yellow">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <p class="card-category"><strong<>Upplevelse</strong></p>
+                <h2 class="card-title"><strong>Stjärnfall</strong></h2>
+                <p><em>2022-12-28</em></p>
+                <p class="card-text" id="card-text-12">Vi skådar in meteoritfallen! <button type="button" id="arrowDown-12" class="arrowDown"><i class="arrowDown fa-solid fa-arrow-down"></i></button><br>
+                    En magisk kväll, där vi ligger på tjocka madrasser och skådar upp i den magiska himlen! Kanske ser vi inte bara en, utan två..tre...fyra...fem stjärnfall?!</p>
+                    <p><a href="/eventdetail.html">Mer info...</a></p>
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <footer>
+
+    </footer>
+    <script>
+
+
+        $(document).ready(function(){
+
+            $(".fa-heart").click(function(){
+                $(this).toggleClass(".fa-heart fa-solid");
+            });
+
+    
+         
+
+            $("#arrowDown-1").click(function(){
+                if ($("#arrowDown-1").hasClass("arrowDown")){
+
+                $("#card-text-1").attr("style", "overflow: visible; height: auto;");
+                $("#arrowDown-1").removeClass("arrowDown");
+                $("#arrowDown-1").addClass("arrowUp");
+            }
+                else if ($("#arrowDown-1").hasClass("arrowUp")){
+                $("#card-text-1").attr("style", "overflow: hidden; height: 20px;");
+                $("#arrowDown-1").removeClass("arrowUp");
+                $("#arrowDown-1").addClass("arrowDown");
+            };});
+
+            $("#arrowDown-2").click(function(){
+                if ($("#arrowDown-2").hasClass("arrowDown")){
+
+                $("#card-text-2").attr("style", "overflow: visible; height: auto;");
+                $("#arrowDown-2").removeClass("arrowDown");
+                $("#arrowDown-2").addClass("arrowUp");
+            }
+                else if ($("#arrowDown-2").hasClass("arrowUp")){
+                $("#card-text-2").attr("style", "overflow: hidden; height: 20px;");
+                $("#arrowDown-2").removeClass("arrowUp");
+                $("#arrowDown-2").addClass("arrowDown");
+            };});
+
+            $("#arrowDown-3").click(function(){
+                if ($("#arrowDown-3").hasClass("arrowDown")){
+
+                $("#card-text-3").attr("style", "overflow: visible; height: auto;");
+                $("#arrowDown-3").removeClass("arrowDown");
+                $("#arrowDown-3").addClass("arrowUp");
+            }
+                else if ($("#arrowDown-3").hasClass("arrowUp")){
+                $("#card-text-3").attr("style", "overflow: hidden; height: 20px;");
+                $("#arrowDown-3").removeClass("arrowUp");
+                $("#arrowDown-3").addClass("arrowDown");
+            };});
+
+            $("#arrowDown-4").click(function(){
+                if ($("#arrowDown-4").hasClass("arrowDown")){
+
+                $("#card-text-4").attr("style", "overflow: visible; height: auto;");
+                $("#arrowDown-4").removeClass("arrowDown");
+                $("#arrowDown-4").addClass("arrowUp");
+            }
+                else if ($("#arrowDown-4").hasClass("arrowUp")){
+                $("#card-text-4").attr("style", "overflow: hidden; height: 20px;");
+                $("#arrowDown-4").removeClass("arrowUp");
+                $("#arrowDown-4").addClass("arrowDown");
+            };});
+
+            $("#arrowDown-5").click(function(){
+                if ($("#arrowDown-5").hasClass("arrowDown")){
+
+                $("#card-text-5").attr("style", "overflow: visible; height: auto;");
+                $("#arrowDown-5").removeClass("arrowDown");
+                $("#arrowDown-5").addClass("arrowUp");
+            }
+                else if ($("#arrowDown-5").hasClass("arrowUp")){
+                $("#card-text-5").attr("style", "overflow: hidden; height: 20px;");
+                $("#arrowDown-5").removeClass("arrowUp");
+                $("#arrowDown-5").addClass("arrowDown");
+            };});
+
+            $("#arrowDown-6").click(function(){
+                if ($("#arrowDown-6").hasClass("arrowDown")){
+
+                $("#card-text-6").attr("style", "overflow: visible; height: auto;");
+                $("#arrowDown-6").removeClass("arrowDown");
+                $("#arrowDown-6").addClass("arrowUp");
+            }
+                else if ($("#arrowDown-6").hasClass("arrowUp")){
+                $("#card-text-6").attr("style", "overflow: hidden; height: 20px;");
+                $("#arrowDown-6").removeClass("arrowUp");
+                $("#arrowDown-6").addClass("arrowDown");
+            };});
+
+            $("#arrowDown-7").click(function(){
+                if ($("#arrowDown-7").hasClass("arrowDown")){
+
+                $("#card-text-7").attr("style", "overflow: visible; height: auto;");
+                $("#arrowDown-7").removeClass("arrowDown");
+                $("#arrowDown-7").addClass("arrowUp");
+            }
+                else if ($("#arrowDown-7").hasClass("arrowUp")){
+                $("#card-text-7").attr("style", "overflow: hidden; height: 20px;");
+                $("#arrowDown-7").removeClass("arrowUp");
+                $("#arrowDown-7").addClass("arrowDown");
+            };});
+
+            $("#arrowDown-8").click(function(){
+                if ($("#arrowDown-8").hasClass("arrowDown")){
+
+                $("#card-text-8").attr("style", "overflow: visible; height: auto;");
+                $("#arrowDown-8").removeClass("arrowDown");
+                $("#arrowDown-8").addClass("arrowUp");
+            }
+                else if ($("#arrowDown-8").hasClass("arrowUp")){
+                $("#card-text-8").attr("style", "overflow: hidden; height: 20px;");
+                $("#arrowDown-8").removeClass("arrowUp");
+                $("#arrowDown-8").addClass("arrowDown");
+            };});
+
+            $("#arrowDown-9").click(function(){
+                if ($("#arrowDown-9").hasClass("arrowDown")){
+
+                $("#card-text-9").attr("style", "overflow: visible; height: auto;");
+                $("#arrowDown-9").removeClass("arrowDown");
+                $("#arrowDown-9").addClass("arrowUp");
+            }
+                else if ($("#arrowDown-9").hasClass("arrowUp")){
+                $("#card-text-9").attr("style", "overflow: hidden; height: 20px;");
+                $("#arrowDown-9").removeClass("arrowUp");
+                $("#arrowDown-9").addClass("arrowDown");
+            };});
+
+
+            $("#arrowDown-10").click(function(){
+                if ($("#arrowDown-10").hasClass("arrowDown")){
+
+                $("#card-text-10").attr("style", "overflow: visible; height: auto;");
+                $("#arrowDown-10").removeClass("arrowDown");
+                $("#arrowDown-10").addClass("arrowUp");
+            }
+                else if ($("#arrowDown-10").hasClass("arrowUp")){
+                $("#card-text-10").attr("style", "overflow: hidden; height: 20px;");
+                $("#arrowDown-10").removeClass("arrowUp");
+                $("#arrowDown-10").addClass("arrowDown");
+            };});
+
+            $("#arrowDown-11").click(function(){
+                if ($("#arrowDown-11").hasClass("arrowDown")){
+
+                $("#card-text-11").attr("style", "overflow: visible; height: auto;");
+                $("#arrowDown-11").removeClass("arrowDown");
+                $("#arrowDown-11").addClass("arrowUp");
+            }
+                else if ($("#arrowDown-11").hasClass("arrowUp")){
+                $("#card-text-11").attr("style", "overflow: hidden; height: 20px;");
+                $("#arrowDown-11").removeClass("arrowUp");
+                $("#arrowDown-11").addClass("arrowDown");
+            };});
+
+            $("#arrowDown-12").click(function(){
+                if ($("#arrowDown-12").hasClass("arrowDown")){
+
+                $("#card-text-12").attr("style", "overflow: visible; height: auto;");
+                $("#arrowDown-12").removeClass("arrowDown");
+                $("#arrowDown-12").addClass("arrowUp");
+            }
+                else if ($("#arrowDown-12").hasClass("arrowUp")){
+                $("#card-text-12").attr("style", "overflow: hidden; height: 20px;");
+                $("#arrowDown-12").removeClass("arrowUp");
+                $("#arrowDown-12").addClass("arrowDown");
+            };});
+        });
+        
+        
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a7ce316168.js" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+        
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <div class="logo">
+            <img src="./media/mushroom.png" width="100px" alt="logo">
+        </div>
+        <div class="nav-links" >
+            <a href="/index.html"><i class="fa-solid fa-tree"></i></a>
+            <a href="/index.html" class="nav-items"><h3 class="nav-link-text">Hem</h3></class=></a>
+        </div>
+        <div class="nav-links" >
+            <a href="/events.html"><i class="fa-solid fa-person-hiking"></i></a>
+            <a href="/events.html" class="nav-items"><h3 class="nav-link-text">Alla Event</h3></a>
+        </div>
+        <div class="nav-links" >
+            <a href="createevent.html"><i class="fa-solid fa-file-signature"></i></a>
+            <a href="createevent.html" class="nav-items"><h3 class="nav-link-text">Skapa Event</h3></a>
+            </div>
+    <div class="nav-links" >
+        <i class="fa-solid fa-bug"></i>
+        <a href="" class="nav-items"><h3 class="nav-link-text">Om oss</h3></a>
+    </div>
+</nav>
+<main>
+    <form action="">
+        <label for="nameInput">Eventnamn: </label>
+        <input type="text" name="nameInput" id="nameInput" placeholder="Namn på event">
+        <label for="dateInput">Datum för eventet: </label>
+        <input type="datetime" name="dateInput" id="dateInput" placeholder="YYYY-MM-DD">
+        <label for="descriptionInput">Beskrivning av eventet: </label>
+        <input type="text" name="descriptionInput" id="descriptionInput" placeholder="Beskrivning av eventet">
+        <label for="locationInput">Plats för eventet: </label>
+        <input type="text" name="locationInput" id="locationInput" placeholder="Plats för eventet">
+        <label for="imageinput">Ladda upp bild: </label>
+        <input type="file" name="imageinput" id="imageinput1">
+        <input type="file" name="imageinput" id="imageinput2">
+        <input type="file" name="imageinput" id="imageinput3">
+        <input type="file" name="imageinput" id="imageinput4">
+        <label for="option">Kategori: </label>
+        <select name="option" id="optionCategory">
+            <option value="möte">Besök</option>
+            <option value="event">EVENT</option>
+            <option value="uppdrag">Uppdrag</option>
+            <option value="upplevelse">Upplevelse</option>
+        </select>
+        <button type="submit">Skapa event</button>
+    </form>
+</main>
+<script>
+
+
+    $(document).ready(function(){
+
+    });
+</script>
+</body>
+</html>

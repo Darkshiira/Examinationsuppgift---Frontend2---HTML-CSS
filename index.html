@@ -19,21 +19,24 @@
 <body>
 <div class="container">
     <nav>
-        <div class="nav-links" >
-            <i class="fa-solid fa-tree"></i></h3>
-            <a href="" class="nav-items"><h3>Hem</h3></class=></a>
+        <div class="logo">
+            <img src="./media/mushroom.png" width="100px" alt="logo">
         </div>
         <div class="nav-links" >
-            <i class="fa-solid fa-person-hiking"></i></h3>
-            <a href="" class="nav-items"><h3>Alla Event</h3></a>
+            <a href="/index.html"><i class="fa-solid fa-tree"></i></a>
+            <a href="/index.html" class="nav-items"><h3 class="nav-link-text">Hem</h3></class=></a>
         </div>
         <div class="nav-links" >
-            <i class="fa-solid fa-file-signature"></i></h3>
-            <a href="" class="nav-items"><h3>Skapa Event</h3></a>
+            <a href="/events.html"><i class="fa-solid fa-person-hiking"></i></a>
+            <a href="/events.html" class="nav-items"><h3 class="nav-link-text">Alla Event</h3></a>
         </div>
         <div class="nav-links" >
-            <i class="fa-solid fa-bug"></i></h3>
-            <a href="" class="nav-items"><h3>Om oss</h3></a>
+            <a href="createevent.html"><i class="fa-solid fa-file-signature"></i></a>
+            <a href="createevent.html" class="nav-items"><h3 class="nav-link-text">Skapa Event</h3></a>
+        </div>
+        <div class="nav-links" >
+            <i class="fa-solid fa-bug"></i>
+            <a href="" class="nav-items"><h3 class="nav-link-text">Om oss</h3></a>
         </div>
     </nav>
     <header>
@@ -46,7 +49,7 @@
 
             <div class="card">
                 <div class="card-img">
-                    <img src="https://images.unsplash.com/photo-1573689705959-7786e029b31e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZhaXJ5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"  alt="">
+                    <img src="https://images.unsplash.com/photo-1573689705959-7786e029b31e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZhaXJ5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"  alt="An image of a tree with light on it">
                     <i class="fa-regular fa-heart"></i>
                 </div>
                 <p class="card-category"><strong>Upplevelse</strong></p>
@@ -54,8 +57,7 @@
                 <p><em>2022-12-24</em></p>
                 <p class="card-text" id="card-text-1">Nu bryter vi mörkret! <button type="button" id="arrowDown-1" class="arrowDown"><i class="arrowDown fa-solid fa-arrow-down"></i></button><br>
                     Välkomna ut på vandring i vår vackra trädgård! Älvorna har dekorerat med vackra ljus över hela trädgården med magiskt stoft. Här kommer vi promenera, äta och njuta av det vackra ljusskenet som  bekämpar ondskan!</p>
-                <p>Mer info...</p>
-                <p><a href=""></a></p>
+                <p><a href="/eventdetail.html">Mer info...</a></p>
             </div>
 
             <div class="card">
@@ -63,75 +65,73 @@
                     <img src="https://images.unsplash.com/photo-1607796059431-132cf42fdaa9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="">
                     <i class="fa-regular fa-heart"></i>
                 </div>
-                <p class="card-category"><strong>Möte</strong></p>
+                <p class="card-category"><strong>Besök</strong></p>
                 <h2 class="card-title"><strong>Tomte-besök</strong></h2>
                 <p><em>2022-10-31</em></p>
                 <p class="card-text" id="card-text-2">Vi hälsar på tomtarna! <button type="button" id="arrowDown-2" class="arrowDown"><i class="arrowDown fa-solid fa-arrow-down"></i></button><br>
                     Ute i trädgården bor våra kära små tomtar. Vi kommer att, <em>förhoppningsvis</em> kunna hälsa på dom och få se hur de har det!</p>
-                <p>Mer info...</p>
-                <p><a href=""></a></p>
+                    <p><a href="/eventdetail.html">Mer info...</a></p>
             </div>
 
             <div class="card">
                 <div class="card-img">
-                    <img src="https://images.unsplash.com/photo-1577493340887-b7bfff550145?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZHJhZ29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    <img src="https://images.unsplash.com/photo-1577493340887-b7bfff550145?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZHJhZ29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="An image of a dragon climbing a tower">
                     <i class="fa-regular fa-heart"></i>
                 </div>
                 <p class="card-category"><strong>EVENT</strong></p>
                 <h2 class="card-title"><strong>Drak-bekämpning</strong></h2>
-                <p><em>2022-12-24</em></p>
+                <p><em>2022-11-12</em></p>
                 <p class="card-text" id="card-text-3">Bekämpa draken! <button type="button" id="arrowDown-3" class="arrowDown"><i class="arrowDown fa-solid fa-arrow-down"></i></button><br>
                     Nu måste alla hjälpas åt att bekämpa draken som tågat in i vår värld! Ta med er era bästa vapen, klä er skyddat och var tappra!</p>
                 <p>Mer info...</p>
-                <p><a href=""></a></p>
+                <p><a href="/eventdetail.html"></a></p>
             </div>
 
             <div class="card">
                 <div class="card-img">
-                    <img src="https://images.unsplash.com/photo-1508018151423-1b1e201c4203?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fHRvYWRzdG9vbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"  alt="">
+                    <img src="https://images.unsplash.com/photo-1508018151423-1b1e201c4203?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fHRvYWRzdG9vbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"  alt="An image of a toadstool">
                     <i class="fa-regular fa-heart"></i>
                 </div>
-                <p class="card-category"><strong>Upplevelse</strong></p>
-                <h2 class="card-title"><strong>Ljusfest</strong></h2>
-                <p><em>2022-12-24</em></p>
-                <p class="card-text" id="card-text-4">Nu bryter vi mörkret! <button type="button" id="arrowDown-4" class="arrowDown"><i class="arrowDown fa-solid fa-arrow-down"></i></button><br>
-                    Välkomna ut på vandring i vår vackra trädgård! Älvorna har dekorerat med vackra ljus över hela trädgården med magiskt stoft. Här kommer vi promenera, äta och njuta av det vackra ljusskenet som  bekämpar ondskan!</p>
-                <p>Mer info...</p>
-                <p><a href=""></a></p>
+                <p class="card-category"><strong>Uppdrag</strong></p>
+                <h2 class="card-title"><strong>Svampplockning</strong></h2>
+                <p><em>2022-10-25</em></p>
+                <p class="card-text" id="card-text-4">Dags att plocka svamp! <button type="button" id="arrowDown-4" class="arrowDown"><i class="arrowDown fa-solid fa-arrow-down"></i></button><br>
+                    Nu är trädgården full av svampar! Vi kommer att plocka svampar och äta dem tillsammans. Vi kommer att lära oss om vilka svampar som är giftiga och vilka som är ätliga.</p>
+                    <p><a href="/eventdetail.html">Mer info...</a></p>
             </div>
 
             <div class="card">
                 <div class="card-img">
-                    <img src="https://images.unsplash.com/photo-1519872436884-4a50eb5a62db?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZmFpcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                    <img src="https://images.unsplash.com/photo-1519872436884-4a50eb5a62db?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZmFpcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="An image of a leprichaun house with round doors">
                     <i class="fa-regular fa-heart"></i>
                 </div>
-                <p class="card-category"><strong>Upplevelse</strong></p>
-                <h2 class="card-title"><strong>Ljusfest</strong></h2>
-                <p><em>2022-12-24</em></p>
-                <p class="card-text" id="card-text-5">Nu bryter vi mörkret! <button type="button" id="arrowDown-5" class="arrowDown"><i class="arrowDown fa-solid fa-arrow-down"></i></button><br>
-                    Välkomna ut på vandring i vår vackra trädgård! Älvorna har dekorerat med vackra ljus över hela trädgården med magiskt stoft. Här kommer vi promenera, äta och njuta av det vackra ljusskenet som  bekämpar ondskan!</p>
-                <p>Mer info...</p>
-                <p><a href=""></a></p>
+                <p class="card-category"><strong>Besök</strong></p>
+                <h2 class="card-title"><strong>Pysslingarnas hus!</strong></h2>
+                <p><em>2022-11-04</em></p>
+                <p class="card-text" id="card-text-5">Vi hälsar på pysslingarna! <button type="button" id="arrowDown-5" class="arrowDown"><i class="arrowDown fa-solid fa-arrow-down"></i></button><br>
+                    Vi tar en tur till pysslingarnas hus, och hoppas på att få träffa på dem. Det kan vara ganska svårt att hitta dit, så vi lämnar inga garantier för att de visar sig.</p>
+                    <p><a href="/eventdetail.html">Mer info...</a></p>
             </div>
 
             <div class="card">
                 <div class="card-img">
-                    <img src="https://images.unsplash.com/photo-1609193297220-8a754d166bbc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGZhaXJ5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"  alt="">
+                    <img src="https://images.unsplash.com/photo-1609193297220-8a754d166bbc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGZhaXJ5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"  alt="An image of a small garden with a sign saying Enchanted gardens">
                     <i class="fa-regular fa-heart"></i>
                 </div>
-                <p class="card-category"><strong>Upplevelse</strong></p>
-                <h2 class="card-title"><strong>Ljusfest</strong></h2>
-                <p><em>2022-12-24</em></p>
-                <p class="card-text" id="card-text-6">Nu bryter vi mörkret! <button type="button" id="arrowDown-6" class="arrowDown"><i class="arrowDown fa-solid fa-arrow-down"></i></button><br>
-                    Välkomna ut på vandring i vår vackra trädgård! Älvorna har dekorerat med vackra ljus över hela trädgården med magiskt stoft. Här kommer vi promenera, äta och njuta av det vackra ljusskenet som  bekämpar ondskan!</p>
-                <p>Mer info...</p>
-                <p><a href=""></a></p>
+                <p class="card-category"><strong>Besök</strong></p>
+                <h2 class="card-title"><strong>Älvornas hem</strong></h2>
+                <p><em>2023-03-01</em></p>
+                <p class="card-text" id="card-text-6">Vi hälsar på älvorna! <button type="button" id="arrowDown-6" class="arrowDown"><i class="arrowDown fa-solid fa-arrow-down"></i></button><br>
+                    Om du har ett gott hjärta kan älvorna visa sig för oss. Då släpper deras magiska ridå, och vi kan kliva in i deras vackra hemmiljö! Fullt av glitter och magi!</p>
+                    <p><a href="/eventdetail.html">Mer info...</a></p>
             </div>
 
         </div>
     </main>
 </div>
-    <footer></footer>
+    <footer>
+
+    </footer>
     <script>
 
 

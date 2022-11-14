@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a7ce316168.js" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+        
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <div class="logo">
+            <img src="./media/mushroom.png" width="100px" alt="logo">
+        </div>
+        <div class="nav-links" >
+            <a href="/index.html"><i class="fa-solid fa-tree"></i></a>
+            <a href="/index.html" class="nav-items"><h3 class="nav-link-text">Hem</h3></a>
+        </div>
+        <div class="nav-links" >
+            <a href="/events.html"><i class="fa-solid fa-person-hiking"></i></a>
+            <a href="/events.html" class="nav-items"><h3 class="nav-link-text">Alla Event</h3></a>
+        </div>
+        <div class="nav-links" >
+            <a href="createevent.html"><i class="fa-solid fa-file-signature"></i></a>
+            <a href="createevent.html" class="nav-items"><h3 class="nav-link-text">Skapa Event</h3></a>
+        </div>
+        <div class="nav-links" >
+            <i class="fa-solid fa-bug"></i>
+            <a href="" class="nav-items"><h3 class="nav-link-text">Om oss</h3></a>
+        </div>
+    </nav>
+    <main>
+        <div class="big-card">
+            <img id="big-card-title-img" src="https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZmFudGFzeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"  alt="An image of a catacomb with a person holding a fire in the middle of it">
+            <div>
+            <h3 class="card-category"><strong>EVENT</strong></h3>
+            <h1>Trollen i katakomberna!</h1>
+            <h2>2022-11-30</h2>
+            <p><em>10:00 - 14:00</em></p>
+            <div class="card-about-info">
+                
+                
+                <div class="card-about-info-text"><h2 id="big-card-title">Vi måste besegra trollen!</h2><button type="button" id="arrowDown-13" class="arrowDown"><i class="arrowDown fa-solid fa-arrow-down"></i></button><p class="card-text" id="card-text-13">
+                    Som ni säkerligen märkt har flera får och hästar försvunnit från våra granngårdar, och vi har fått en ledtråd om att det är trollen som står bakom detta. Vi måste därför ta oss in i deras hem och besegra dem.
+                    Troll är en av de farligaste varelserna på jorden, för att de är såpass stora och starka. Deras hud är hård som läder och deras knytnävar lika stora som människor! 
+                    Turen är att de ändå är rätt dumma, så vi har en chans att besegra dem. Vi måste dock vara flera för att lyckas, och vi måste vara snabba för att kunna hinna undan deras attacker.
+                    Med er behöver ni ha med er svärd, och om ni har en magisk sten så kan ni använda den för att skada trollen. Eld fungerar också väldigt effektivt på dem, så ta med er en eldstav om ni har en sådan också! Och glöm för guds skull inte er rustning!</p>
+                </div>   
+            </div>
+            <p>Låter det som ett uppdrag för dig? Kom till oss vid den angivna tiden på den <em>stora Ängen</em> vid <em>Fylke</em>!</p>
+        
+            <div class="gallery">
+                <img class="gallery-item" src="https://images.unsplash.com/photo-1663443431924-06315675a625?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" width="" alt="An image of a troll in the night">
+                <img class="gallery-item"  src="https://images.unsplash.com/photo-1553986782-9f6de60b51b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=849&q=80"  width="" alt="An image of an armour.">
+                <img class="gallery-item"  src="https://images.unsplash.com/photo-1548445929-4f60a497f851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGZhbnRhc3l8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" width="" alt="An image of an entrance to a cavern catacomb">
+                <img class="gallery-item"  src="https://images.unsplash.com/photo-1440711085503-89d8ec455791?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjM5fHxmYW50YXN5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" width="" alt="An image of a sword stuck in the ground">
+            </div> 
+        </div>   
+        </div>
+    </main>
+
+    <script>
+
+
+        $(document).ready(function(){
+
+            $(".fa-heart").click(function(){
+                $(this).toggleClass(".fa-heart fa-solid");
+            });
+
+    
+         
+
+            $("#arrowDown-13").click(function(){
+                if ($("#arrowDown-13").hasClass("arrowDown")){
+
+                $("#card-text-13").attr("style", "display:block");
+                $("#arrowDown-13").removeClass("arrowDown");
+                $("#arrowDown-13").addClass("arrowUp");
+            }
+                else if ($("#arrowDown-13").hasClass("arrowUp")){
+                $("#card-text-13").attr("style", "display: none;");
+                $("#arrowDown-13").removeClass("arrowUp");
+                $("#arrowDown-13").addClass("arrowDown");
+            };});
+        });
+    </script>
+</body>
+</html>
