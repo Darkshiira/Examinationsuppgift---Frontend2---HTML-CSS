@@ -9,3 +9,14 @@
 color: #222222;
 text-shadow: #c3c3c3 1px 1px 0;
 }
+
+@mixin buttonDesign {
+            cursor:pointer;
+            width: 15rem;
+            height: 3rem;
+            border-radius: 25px;
+            font-family: "Roboto", sans-serif;
+            font-size: 1.1rem;
+            background-color: v.$body-background;
+            color: #fff;
+}

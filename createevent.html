@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,41 +34,76 @@
         <div class="nav-links" >
             <a href="createevent.html"><i class="fa-solid fa-file-signature"></i></a>
             <a href="createevent.html" class="nav-items"><h3 class="nav-link-text">Skapa Event</h3></a>
-            </div>
-    <div class="nav-links" >
-        <i class="fa-solid fa-bug"></i>
-        <a href="" class="nav-items"><h3 class="nav-link-text">Om oss</h3></a>
-    </div>
+        </div>
+        <div class="nav-links" >
+            <a href="aboutUs.html"><i class= "fa-solid fa-bug"></i></a>
+            <a href="aboutUs.html" class="nav-items"><h3 class="nav-link-text">Om oss</h3></a>
+        </div>
 </nav>
 <main>
-    <form action="">
-        <label for="nameInput">Eventnamn: </label>
-        <input type="text" name="nameInput" id="nameInput" placeholder="Namn på event">
-        <label for="dateInput">Datum för eventet: </label>
-        <input type="datetime" name="dateInput" id="dateInput" placeholder="YYYY-MM-DD">
-        <label for="descriptionInput">Beskrivning av eventet: </label>
-        <input type="text" name="descriptionInput" id="descriptionInput" placeholder="Beskrivning av eventet">
-        <label for="locationInput">Plats för eventet: </label>
-        <input type="text" name="locationInput" id="locationInput" placeholder="Plats för eventet">
-        <label for="imageinput">Ladda upp bild: </label>
-        <input type="file" name="imageinput" id="imageinput1">
-        <input type="file" name="imageinput" id="imageinput2">
-        <input type="file" name="imageinput" id="imageinput3">
-        <input type="file" name="imageinput" id="imageinput4">
-        <label for="option">Kategori: </label>
-        <select name="option" id="optionCategory">
-            <option value="möte">Besök</option>
-            <option value="event">EVENT</option>
-            <option value="uppdrag">Uppdrag</option>
-            <option value="upplevelse">Upplevelse</option>
-        </select>
-        <button type="submit">Skapa event</button>
+    <div>
+    <form action="index.html" class="form-createEvent">
+        <h1>Skapa Event:</h1>
+        <div class="inputField">        
+            <label for="nameInput">Eventnamn: </label>
+            <input type="text" name="nameInput" id="nameInput" placeholder="Namn på event">
+        </div>
+        <div class="inputField">
+            <label for="dateInput">Datum för eventet: </label>
+            <input type="datetime" name="dateInput" id="dateInput" placeholder="YYYY-MM-DD">
+        </div>
+        <div class="inputField">
+            <label for="descriptionInput">Beskrivning av eventet: </label>
+            <textarea name="descriptionInput" id="descriptionInput">Beskrivning av eventet</textarea>
+        </div>
+        <div class="inputField">
+            <label for="locationInput">Plats för eventet: </label>
+            <input type="text" name="locationInput" id="locationInput" placeholder="Plats för eventet">
+        </div>
+        <div class="inputField">
+            <label for="imageinput">Ladda upp bild: </label>
+            <div style="position:relative">
+                <input style="position:absolute" type="file" name="imageinput" id="imageinput1" class="imageinput">
+                <i style="position:absolute" class="fa-regular fa-file-image"></i>
+            </div>
+            <div style="position:relative">
+                <input style="position:absolute" type="file" name="imageinput" id="imageinput2" class="imageinput">
+                <i style="position:absolute" class="fa-regular fa-file-image"></i>
+            </div>
+            <div style="position:relative">
+                <input style="position:absolute" type="file" name="imageinput" id="imageinput3" class="imageinput">
+                <i style="position:absolute" class="fa-regular fa-file-image"></i>
+            </div>
+            
+            <div style="position:relative">
+                <input style="position:absolute" type="file" name="imageinput" id="imageinput4" class="imageinput">
+                <i style="position:absolute" class="fa-regular fa-file-image"></i>
+            </div>
+            
+     
+        </div>
+        <div class="inputField">
+            <label for="option">Kategori: </label>
+            <select name="option" id="optionCategory">
+                <option value="möte">Besök</option>
+                <option value="event">EVENT</option>
+                <option value="uppdrag">Uppdrag</option>
+                <option value="upplevelse">Upplevelse</option>
+            </select>
+        </div>
+        <button type="submit"><i class="fa-solid fa-upload"></i>Skapa event</button>
     </form>
 </main>
 <script>
 
 
     $(document).ready(function(){
+        $("nav").mouseover(function(){
+                $("nav").css("transform", "translateX(0)");
+            })
+            $("nav").mouseout(function(){
+                $("nav").css("transform", "translateX(-95%)");
+            })
 
     });
 </script>

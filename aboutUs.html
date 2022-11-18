@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a7ce316168.js" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+        
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <div class="logo">
+            <img src="./media/mushroom.png" width="100px" alt="logo">
+        </div>
+        <div class="nav-links" >
+            <a href="/index.html"><i class="fa-solid fa-tree"></i></a>
+            <a href="/index.html" class="nav-items"><h3 class="nav-link-text">Hem</h3></a>
+        </div>
+        <div class="nav-links" >
+            <a href="/events.html"><i class="fa-solid fa-person-hiking"></i></a>
+            <a href="/events.html" class="nav-items"><h3 class="nav-link-text">Alla Event</h3></a>
+        </div>
+        <div class="nav-links" >
+            <a href="createevent.html"><i class="fa-solid fa-file-signature"></i></a>
+            <a href="createevent.html" class="nav-items"><h3 class="nav-link-text">Skapa Event</h3></a>
+        </div>
+        <div class="nav-links" >
+            <a href="aboutUs.html"><i class= "fa-solid fa-bug"></i></a>
+            <a href="aboutUs.html" class="nav-items"><h3 class="nav-link-text">Om oss</h3></a>
+        </div>
+    </nav>
+    <main>
+    <div class="main-aboutUs">
+        <h1>Om oss</h1>
+        <img id="teamImg" src="https://images.unsplash.com/photo-1520512533001-af75c194690b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTYxfHxncm91cHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+
+        <div>
+            <h2>Vår vision</h2>
+            <p>Vi står för att alla ska kunna komma ut och möta magin i världen! 
+                Folk har slutat att tro på de mytiska väsen somm finns, och därför börjar de att försvinna mer och mer ur vår åsyn.
+            Genom att ha vårt kollektiva hem så nära den magiska gränsen, och genom att skapa dessa event så kan människor komma tillba till sin naturliga miljö och börja se det som verkligen händer runt om dem.
+            Vi tror på att människor mår som bäst när de är i kontakt med naturen, och vi vill dela med oss av den positiva energin som finns, och anlade därför detta kollektiva boende och trädgård för oss alla!
+            Där delger vi inte bara upplevelser, utan också kunskap! Så kanske kan du lära dig en och annan formel hos oss? </p>
+            <h2>Vårt team</h2>
+            <p>Vi består av tre häxor som själva upplevt magins värld! 
+                Vi har alla varit med om något som vi inte kan förklara på något vis, och vi vill därför visa hur det är verkligt!
+                Katherine är expert på att hitta väsen, och har varit med om att se ett troll som var på väg att försvinna.
+                Maria är expert på kristallers magiska krafter, och delar gärna med sig om sin kunskap!
+                Och till sist har vi Linnéa, som kan allt om naturens olika arter och kan berätta om deras magiska krafter! 
+                
+            </p>  
+        </div>
+        <div class="owner-section">
+            <div class="owner-card">
+                <img src="https://images.unsplash.com/photo-1510678960173-b52e15cbcfb4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTIxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                <div class="owner-details">
+                    <h3>Ägare</h3>
+                    <p>Linnèa Witch</p>
+                    <a href="tel:8665562570">866-556-2570</a><br>
+                    <a href="mailto:linnea_witch@magi.nu">linnea_witch@magi.nu</a>
+                </div>
+            </div>
+            
+            <div class="owner-comments">
+                <h2>Information från Linnéa</h2>
+                <p>"Vårt kollektiva hem växer!
+                Vi öppnar upp vårt hem för alla som vill komma och uppleva magin, och vi vill att du ska känna dig som hemma hos oss! Därför är ni välkomna att komma och bo hos oss, och vi kommer att dela med oss av vår kunskap och vår magi med er!
+                </p>
+            </div>
+            
+        </div>    
+            
+        <h2>
+            Kontakta gärna oss:
+        </h2>
+        
+        <form action="aboutUs.html" class="form-aboutUs">
+            <div class="aboutUsInputField">
+                <label for="aboutUsFirstName">Ditt namn: </label>
+                <input type="text" name="aboutUsFirstName" id="aboutUsFirstName" class="aboutUsInput" placeholder="Förnamn Efternamn">
+            </div>
+            <div class="aboutUsInputField">
+                <label for="aboutUsEmail">Din emailadress:</label>
+                <input type="email" name="aboutUsEmail" id="aboutUsEmail" class="aboutUsInput" placeholder="xxxx@xxxxxx.xxx">
+            </div>
+            
+            <div class="aboutUsInputField">
+                <label for="aboutUsMessage">Meddelande</label>
+                <textarea name="aboutUsMessage" id="aboutUsMessage" cols="30" rows="10" placeholder="Skriv ditt meddelande här"></textarea>
+            </div>
+            <input class="form-aboutUs-button" type="button" value="Skicka" id="form-aboutUs-button">
+        </form>
+    </div>
+
+    </main>
+    <div class="blurryBackground">
+    </div>
+    <div class="popUpMessage">
+        <button class="closePopUpX" id="closePopUpX">X</button>
+        <h2>Meddelande skickat!</h2>
+        <p>Tack för ditt meddelande! Vi återkommer så snart vi kan!</p>
+        <button class="closePopUp" id="closePopUp">Stäng</button>
+
+    </div>
+    <script>
+
+
+        $(document).ready(function(){
+            $("nav").mouseover(function(){
+                $("nav").css("transform", "translateX(0)");
+            })
+            $("nav").mouseout(function(){
+                $("nav").css("transform", "translateX(-95%)");
+            })
+
+            $(".form-aboutUs-button").click(function(){
+                event.preventDefault();
+                const recievedMessage ={firstName:$("#aboutUsFirstName").val(),
+                email:$("#aboutUsEmail").val(),
+                message:$("#aboutUsMessage").val()} 
+                localStorage.setItem("recievedMessage", JSON.stringify(recievedMessage));
+                console.log(recievedMessage);
+
+                $(".blurryBackground").css("display", "block");
+                $(".popUpMessage").css("display", "block");
+                
+            });
+                
+            $("#closePopUpX").click(function(){
+                $(".blurryBackground").css("display", "none");
+                $(".popUpMessage").css("display", "none");
+            });
+
+            $("#closePopUp").click(function(){
+                $(".blurryBackground").css("display", "none");
+                $(".popUpMessage").css("display", "none");
+            });
+
+            $(".blurryBackground").click(function(){
+                $(".blurryBackground").css("display", "none");
+                $(".popUpMessage").css("display", "none");
+            });
+        });
+        
+        
+        
+
+    </script>
+</body>
+</html>

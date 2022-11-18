@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,9 +36,9 @@
             <a href="createevent.html" class="nav-items"><h3 class="nav-link-text">Skapa Event</h3></a>
             </div>
         <div class="nav-links" >
-            <i class="fa-solid fa-bug"></i>
-            <a href="" class="nav-items"><h3 class="nav-link-text">Om oss</h3></a>
-        </div>
+            <a href="aboutUs.html"><i class= "fa-solid fa-bug"></i></a>
+            <a href="aboutUs.html" class="nav-items"><h3 class="nav-link-text">Om oss</h3></a>
+         </div>
     </nav>
     <main>
         <h1>Kom med oss på äventyr!</h1>
@@ -212,6 +213,12 @@
 
 
         $(document).ready(function(){
+            $("nav").mouseover(function(){
+                $("nav").css("transform", "translateX(0)");
+            })
+            $("nav").mouseout(function(){
+                $("nav").css("transform", "translateX(-95%)");
+            })
 
             $(".fa-heart").click(function(){
                 $(this).toggleClass(".fa-heart fa-solid");
