@@ -142,94 +142,24 @@
                 $("nav").css("transform", "translateX(0)");
             })
             $("nav").mouseout(function(){
-                $("nav").css("transform", "translateX(-95%)");
+                $("nav").css("transform", "translateX(-90%)");
             })
 
             $(".fa-heart").click(function(){
                 $(this).toggleClass(".fa-heart fa-solid");
             });
 
-    
-         
+            $(".arrowDown").click(function(){ 
+                if ($(this).hasClass("arrowUp")) {
+                $(this).parent(".card-text").attr("style", "overflow: hidden; height: 20px;");
+                $(this).removeClass("arrowUp");
+                $(this).attr("style", "transform: rotate(0deg);");
+                } else {
+                    $(this).parent(".card-text").attr("style", "overflow: visible; height: auto;");
+                    $(this).toggleClass("arrowUp");
+                    $(this).attr("style", "transform: rotate(90deg)");
 
-            $("#arrowDown-1").click(function(){
-                if ($("#arrowDown-1").hasClass("arrowDown")){
-
-                $("#card-text-1").attr("style", "overflow: visible; height: auto;");
-                $("#arrowDown-1").removeClass("arrowDown");
-                $("#arrowDown-1").addClass("arrowUp");
-            }
-                else if ($("#arrowDown-1").hasClass("arrowUp")){
-                $("#card-text-1").attr("style", "overflow: hidden; height: 20px;");
-                $("#arrowDown-1").removeClass("arrowUp");
-                $("#arrowDown-1").addClass("arrowDown");
-            };});
-
-            $("#arrowDown-2").click(function(){
-                if ($("#arrowDown-2").hasClass("arrowDown")){
-
-                $("#card-text-2").attr("style", "overflow: visible; height: auto;");
-                $("#arrowDown-2").removeClass("arrowDown");
-                $("#arrowDown-2").addClass("arrowUp");
-            }
-                else if ($("#arrowDown-2").hasClass("arrowUp")){
-                $("#card-text-2").attr("style", "overflow: hidden; height: 20px;");
-                $("#arrowDown-2").removeClass("arrowUp");
-                $("#arrowDown-2").addClass("arrowDown");
-            };});
-
-            $("#arrowDown-3").click(function(){
-                if ($("#arrowDown-3").hasClass("arrowDown")){
-
-                $("#card-text-3").attr("style", "overflow: visible; height: auto;");
-                $("#arrowDown-3").removeClass("arrowDown");
-                $("#arrowDown-3").addClass("arrowUp");
-            }
-                else if ($("#arrowDown-3").hasClass("arrowUp")){
-                $("#card-text-3").attr("style", "overflow: hidden; height: 20px;");
-                $("#arrowDown-3").removeClass("arrowUp");
-                $("#arrowDown-3").addClass("arrowDown");
-            };});
-
-            $("#arrowDown-4").click(function(){
-                if ($("#arrowDown-4").hasClass("arrowDown")){
-
-                $("#card-text-4").attr("style", "overflow: visible; height: auto;");
-                $("#arrowDown-4").removeClass("arrowDown");
-                $("#arrowDown-4").addClass("arrowUp");
-            }
-                else if ($("#arrowDown-4").hasClass("arrowUp")){
-                $("#card-text-4").attr("style", "overflow: hidden; height: 20px;");
-                $("#arrowDown-4").removeClass("arrowUp");
-                $("#arrowDown-4").addClass("arrowDown");
-            };});
-
-            $("#arrowDown-5").click(function(){
-                if ($("#arrowDown-5").hasClass("arrowDown")){
-
-                $("#card-text-5").attr("style", "overflow: visible; height: auto;");
-                $("#arrowDown-5").removeClass("arrowDown");
-                $("#arrowDown-5").addClass("arrowUp");
-            }
-                else if ($("#arrowDown-5").hasClass("arrowUp")){
-                $("#card-text-5").attr("style", "overflow: hidden; height: 20px;");
-                $("#arrowDown-5").removeClass("arrowUp");
-                $("#arrowDown-5").addClass("arrowDown");
-            };});
-
-            $("#arrowDown-6").click(function(){
-                if ($("#arrowDown-6").hasClass("arrowDown")){
-
-                $("#card-text-6").attr("style", "overflow: visible; height: auto;");
-                $("#arrowDown-6").removeClass("arrowDown");
-                $("#arrowDown-6").addClass("arrowUp");
-            }
-                else if ($("#arrowDown-6").hasClass("arrowUp")){
-                $("#card-text-6").attr("style", "overflow: hidden; height: 20px;");
-                $("#arrowDown-6").removeClass("arrowUp");
-                $("#arrowDown-6").addClass("arrowDown");
-            };});
-
+                }});
         });
         
         

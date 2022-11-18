@@ -1,5 +1,30 @@
 @use "variables" as v;
 
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flexRowJustifySpace {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexRowJustifyCenterWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
 @mixin roundedImage {
     border-radius: 10%;
     box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
@@ -19,4 +44,11 @@ text-shadow: #c3c3c3 1px 1px 0;
             font-size: 1.1rem;
             background-color: v.$body-background;
             color: #fff;
+}
+
+@mixin buttonHover{
+    &:hover {
+        filter:brightness(1.2);
+    }
+
 }

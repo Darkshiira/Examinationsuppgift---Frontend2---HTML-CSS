@@ -1,7 +1,7 @@
 body {
+  margin: 0;
   background-color: #183021;
   color: #fff;
-  margin: 0;
   font-family: "Roboto", sans-serif;
 }
 body a {
@@ -15,15 +15,14 @@ body .container nav {
   position: fixed;
   left: 0;
   top: 0;
-  height: 100%;
   z-index: 2;
   transform: translateX(-95%);
-  transition: 0.5s ease-in-out;
   height: 100%;
   padding: 0 32px;
   background-color: #2a7e5b;
   border: 2px solid #183021;
   color: #183021;
+  transition: 0.5s ease-in-out;
 }
 body .container nav .logo {
   text-align: center;
@@ -33,11 +32,11 @@ body .container nav .nav-links {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-left: 12px;
-  border-radius: 20px;
   height: 40px;
+  padding-left: 12px;
   padding: 0 12px;
   margin: 50px 0;
+  border-radius: 20px;
 }
 body .container nav .nav-links a {
   color: #222222;
@@ -47,9 +46,6 @@ body .container nav .nav-links a {
 body .container nav .nav-links i {
   color: #222222;
   text-shadow: #c3c3c3 1px 1px 0;
-}
-body .container nav .nav-links i :active {
-  scale: 1.5;
 }
 body .container nav .nav-links:hover {
   filter: brightness(1.2);
@@ -73,12 +69,12 @@ body .container main img {
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 body .container main .deck {
-  margin-top: 26px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   gap: 15px;
+  margin-top: 26px;
 }
 body .container main .deck .card {
   border-radius: 10%;
@@ -87,18 +83,18 @@ body .container main .deck .card {
   background-color: #2a7e5b;
 }
 body .container main .deck .card .card-img {
+  position: relative;
   height: 250px;
   overflow: hidden;
-  position: relative;
 }
 body .container main .deck .card .card-img i {
   position: absolute;
   top: 15px;
   right: 15px;
+  z-index: 1;
   font-size: large;
   font-size: 3rem;
   color: #fff;
-  z-index: 1;
   cursor: pointer;
 }
 body .container main .deck .card .card-img img {
@@ -110,8 +106,8 @@ body .container main .deck .card .card-title {
 body .container main .deck .card .card-category {
   color: #222222;
   text-shadow: #c3c3c3 1px 1px 0;
-  text-align: end;
   padding-right: 10px;
+  text-align: end;
 }
 body .container main .deck .card .card-text {
   height: 20px;
@@ -121,31 +117,31 @@ body .container main .deck .card .card-text .arrowDown {
   font-size: large;
   color: #fff;
 }
-body .container main .deck .card .card-text .arrowUp {
+body .container main .deck .card .card-text .arrowDown.arrowUp {
   transform: rotate(0.5turn);
 }
 body .container main .deck .card .card-text button {
+  padding: 0;
+  margin: 0;
   background-color: #2a7e5b;
   border: none;
   color: #183021;
   font-size: 1.5rem;
-  padding: 0;
-  margin: 0;
   cursor: pointer;
 }
 body .big-card {
-  background-color: #2a7e5b;
-  width: 80%;
-  margin: 0 auto;
   border-radius: 10%;
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   display: flex;
   flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #2a7e5b;
 }
 body .big-card #big-card-title-img {
+  width: 50%;
   border-radius: 10% 0 0 10%;
   box-shadow: none;
-  width: 50%;
 }
 body .big-card .card-about-info {
   display: flex;
@@ -168,27 +164,30 @@ body .big-card .card-about-info .card-about-info-text #card-text-13 {
   transition: 0.5s ease-in-out;
 }
 body .big-card .card-about-info .card-about-info-text button {
+  padding: 0;
+  margin: 0;
   background-color: #2a7e5b;
   border: none;
   color: #183021;
   font-size: 1rem;
-  padding: 0;
-  margin: 0;
   cursor: pointer;
+}
+body .big-card .card-about-info .card-about-info-text button:hover {
+  filter: brightness(1.2);
 }
 body .big-card .card-category {
   color: #222222;
   text-shadow: #c3c3c3 1px 1px 0;
-  text-align: end;
   padding-right: 40px;
   padding-top: 40px;
+  text-align: end;
 }
 body .big-card .gallery {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 0 32px;
 }
 body .big-card .gallery img {
@@ -210,14 +209,14 @@ body .form-createEvent {
   background-color: #2a7e5b;
   border-radius: 10px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-  font-family: "roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 body .form-createEvent .inputField {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 90%;
   margin-bottom: 20px;
+  width: 90%;
 }
 body .form-createEvent .inputField i {
   left: 0;
@@ -226,14 +225,14 @@ body .form-createEvent .inputField i {
   cursor: pointer;
 }
 body .form-createEvent label {
-  width: 25%;
   padding-right: 10px;
   padding-top: 20px;
+  width: 25%;
 }
 body .form-createEvent #nameInput, body .form-createEvent #dateInput, body .form-createEvent #locationInput {
-  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
+  width: 100%;
   box-sizing: border-box;
   border: none;
   border-radius: 4px;
@@ -241,27 +240,27 @@ body .form-createEvent #nameInput, body .form-createEvent #dateInput, body .form
 }
 body .form-createEvent .imageinput {
   opacity: 0;
-  margin: 20px;
   left: 0;
   z-index: 1;
+  margin: 20px;
   cursor: pointer;
 }
 body .form-createEvent textarea {
-  width: 100%;
-  height: 150px;
   padding: 12px 20px;
   margin: 8px 0;
+  width: 100%;
+  height: 150px;
   box-sizing: border-box;
   border: none;
   border-radius: 4px;
   background-color: #fff;
-  font-family: "roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: grey;
 }
 body .form-createEvent #optionCategory {
-  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
+  width: 100%;
   box-sizing: border-box;
   border: none;
   border-radius: 4px;
@@ -272,43 +271,43 @@ body .form-createEvent button {
   width: 15rem;
   height: 3rem;
   border-radius: 25px;
+  background-color: #183021;
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
-  background-color: #183021;
   color: #fff;
+}
+body .form-createEvent button:hover {
+  filter: brightness(1.2);
 }
 body .form-createEvent button i {
   padding-right: 4rem;
   color: #fff;
 }
-body .form-createEvent button:hover {
-  background-color: #2c7e5c;
-}
 body .main-aboutUs {
-  background-color: #2a7e5b;
-  width: 80%;
-  margin: 0 auto;
-  padding: 0 32px;
   border-radius: 10%;
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
+  padding: 0 32px;
+  width: 80%;
+  background-color: #2a7e5b;
 }
 body .main-aboutUs .owner-section {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding: 20px 0;
 }
 body .main-aboutUs .owner-section .owner-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  background-color: #183021;
   border-radius: 10%;
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  justify-content: space-between;
+  background-color: #183021;
 }
 body .main-aboutUs .owner-section .owner-card img {
   border-radius: 40px 40px 0 0;
@@ -318,47 +317,48 @@ body .main-aboutUs .owner-section .owner-card a {
   color: #fff;
 }
 body .main-aboutUs .owner-section .owner-comments {
-  width: 25%;
   padding-top: 30px;
+  width: 25%;
 }
 body .main-aboutUs .form-aboutUs {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 70%;
-  background-color: #183021;
   border-radius: 10%;
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 30px;
   padding: 30px 0;
+  width: 70%;
+  background-color: #183021;
 }
 body .main-aboutUs .form-aboutUs .aboutUsInput {
-  width: 80%;
   padding: 12px 20px;
   margin: 8px 0;
+  width: 80%;
   box-sizing: border-box;
   border: none;
   border-radius: 4px;
   background-color: #fff;
-  font-family: "roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 body .main-aboutUs .form-aboutUs .aboutUsInputField {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 80%;
 }
 body .main-aboutUs .form-aboutUs textarea {
-  width: 80%;
-  height: 150px;
   padding: 12px 20px;
   margin: 8px 0;
+  width: 80%;
+  height: 150px;
   box-sizing: border-box;
   border: none;
   border-radius: 4px;
   background-color: #fff;
-  font-family: "roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: grey;
 }
 body .main-aboutUs .form-aboutUs .form-aboutUs-button {
@@ -371,28 +371,31 @@ body .main-aboutUs .form-aboutUs .form-aboutUs-button {
   background-color: #2a7e5b;
   color: #fff;
 }
+body .main-aboutUs .form-aboutUs .form-aboutUs-button:hover {
+  filter: brightness(1.2);
+}
 body .blurryBackground {
   display: none;
-  width: 100%;
-  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   opacity: 0.5;
   background-color: black;
   z-index: 2;
 }
 body .popUpMessage {
+  border-radius: 10%;
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   display: none;
   position: fixed;
   top: 35%;
   left: 40%;
+  z-index: 3;
   width: 30rem;
   height: 20rem;
   background-color: #183021;
-  z-index: 3;
-  border-radius: 10%;
-  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   text-align: center;
 }
 body .popUpMessage .closePopUpX {
@@ -413,6 +416,9 @@ body .popUpMessage .closePopUp {
   background-color: #2a7e5b;
   color: #fff;
   margin-top: 3rem;
+}
+body .popUpMessage .closePopUp:hover {
+  filter: brightness(1.2);
 }
 
 @media (max-width: 1280px) {
