@@ -135,7 +135,7 @@ body .big-card {
   display: flex;
   flex-direction: row;
   width: 80%;
-  margin: 0 auto;
+  margin: 30px auto;
   background-color: #2a7e5b;
 }
 body .big-card #big-card-title-img {
@@ -203,7 +203,7 @@ body .form-createEvent {
   justify-content: center;
   align-items: center;
   padding: 20px 0 32px;
-  margin: 0 auto;
+  margin: 30px auto;
   width: 60%;
   height: 100%;
   background-color: #2a7e5b;
@@ -289,7 +289,7 @@ body .main-aboutUs {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+  margin: 30px auto;
   padding: 0 32px;
   width: 80%;
   background-color: #2a7e5b;
@@ -448,6 +448,9 @@ body .popUpMessage .closePopUp:hover {
   }
   body .container header {
     margin-top: 200px;
+  }
+  body .form-createEvent {
+    width: 80%;
   }
 }
 @media (max-width: 600px) {
