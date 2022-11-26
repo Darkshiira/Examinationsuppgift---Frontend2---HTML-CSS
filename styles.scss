@@ -244,6 +244,8 @@ body {
     }
     }
 }
+
+// for createevent.html
         .form-createEvent{
         @include m.flexColumn;
         justify-content: center;
@@ -336,7 +338,7 @@ body {
         }
     }
     
-
+//for abouUs.html
 .main-aboutUs {
     @include m.roundedImage;
     @include m.flexColumn;
